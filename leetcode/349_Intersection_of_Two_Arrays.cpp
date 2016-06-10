@@ -24,6 +24,8 @@ public:
 				}
 			}
 		}
+		auto it = unique(result.begin(), result.end());
+		result.erase(it, result.end());
 		return result;
 	}
 
@@ -35,7 +37,7 @@ public:
 		result.reserve(min(nums1_len, nums2_len));
 		if (nums1_len < 1 || nums2_len < 1) return result;
 		unordered_map<int, int> nums1_map;
-		for (auto e: nums1)
+		for (auto e : nums1)
 		{
 			nums1_map[e]++;
 		}
@@ -43,10 +45,10 @@ public:
 		for (auto e : nums2)
 		{
 			auto r = nums1_map.find(e);
-			if (r!=nums1_map.end() && r->second > 0)
+			if (r != nums1_map.end() && r->second > 0)
 			{
 				result.push_back(e);
-				(r->second)--;
+				(r->second) = 0;
 			}
 		}
 		return result;
@@ -78,6 +80,8 @@ public:
 				++i2;
 			}
 		}
+		auto it = unique(result.begin(), result.end());
+		result.erase(it, result.end());
 		return result;
 	}
 };

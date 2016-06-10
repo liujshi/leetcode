@@ -44,5 +44,8 @@
     <ClCompile Include="Profiler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="349_Intersection_of_Two_Arrays.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
