@@ -40,5 +40,8 @@ namespace Profiler{
 
 		static size_t memory(MemoryUnit mu = MemoryUnit::KB_);//查询当前程序的内存使用量
 	};
+	extern ProfilerInstance::MemoryUnit KB_mu;
+	extern ProfilerInstance::MemoryUnit MB_mu;
+	extern ProfilerInstance::MemoryUnit GB_mu;
 }
 #endif

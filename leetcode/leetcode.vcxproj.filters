@@ -47,5 +47,8 @@
     <ClCompile Include="349_Intersection_of_Two_Arrays.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="347_Top_K_Frequent_Elements.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -85,6 +85,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="347_Top_K_Frequent_Elements.cpp" />
     <ClCompile Include="349_Intersection_of_Two_Arrays.cpp" />
     <ClCompile Include="350_Intersection_of_Two_Arrays.cpp" />
     <ClCompile Include="leetcode.cpp" />

@@ -1,6 +1,8 @@
 #include "Profiler.h"
 namespace Profiler{
-
+	ProfilerInstance::MemoryUnit KB_mu = ProfilerInstance::MemoryUnit::KB_;
+	ProfilerInstance::MemoryUnit MB_mu = ProfilerInstance::MemoryUnit::MB_;
+	ProfilerInstance::MemoryUnit GB_mu = ProfilerInstance::MemoryUnit::GB_;
 	ProfilerInstance::TimePoint ProfilerInstance::startTime;
 	ProfilerInstance::TimePoint ProfilerInstance::finishTime;
 	ProfilerInstance::DurationTime ProfilerInstance::duringTime;
