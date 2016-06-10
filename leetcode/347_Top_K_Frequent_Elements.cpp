@@ -1,6 +1,5 @@
 #include "Common.h"
 #include "Profiler.h"
-#include <map>
 using namespace std;
 using namespace Profiler;
 class Solution {
@@ -87,7 +86,7 @@ public:
 	}
 };
 
-int main()
+int main1()
 {
 	/*vector<int> p(100000, 1); p.push_back(2);
 	Profiler::ProfilerInstance::start();
@@ -118,4 +117,5 @@ int main()
 	Profiler::ProfilerInstance::finish();
 	Profiler::ProfilerInstance::dumpDuringTime();
 
+	return 0;
 }

@@ -50,5 +50,8 @@
     <ClCompile Include="347_Top_K_Frequent_Elements.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="345_Reverse_Vowels_of_String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
