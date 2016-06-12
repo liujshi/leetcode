@@ -85,6 +85,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="341_NestedInteger.cpp" />
+    <ClCompile Include="343_Integer_Break.cpp" />
     <ClCompile Include="345_Reverse_Vowels_of_String.cpp" />
     <ClCompile Include="347_Top_K_Frequent_Elements.cpp" />
     <ClCompile Include="349_Intersection_of_Two_Arrays.cpp" />

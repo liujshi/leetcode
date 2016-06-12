@@ -53,5 +53,11 @@
     <ClCompile Include="345_Reverse_Vowels_of_String.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="343_Integer_Break.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="341_NestedInteger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
