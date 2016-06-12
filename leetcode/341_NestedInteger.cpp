@@ -20,6 +20,23 @@ using namespace std;
 *     const vector<NestedInteger> &getList() const;
 * };
 */
+class NestedInteger{
+private:
+	vector<NestedInteger> data;
+public:
+	bool isInteger() const
+	{
+		return true;
+	}
+	int getInteger() const
+	{
+		return 0;
+	}
+	const vector<NestedInteger> &getList() const
+	{
+		return data;
+	}
+};
 class NestedIterator {
 private:
 	int index = -1;
