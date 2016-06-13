@@ -59,5 +59,8 @@
     <ClCompile Include="341_NestedInteger.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="338_Counting_Bits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

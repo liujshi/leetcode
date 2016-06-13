@@ -85,6 +85,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="338_Counting_Bits.cpp" />
     <ClCompile Include="341_NestedInteger.cpp" />
     <ClCompile Include="343_Integer_Break.cpp" />
     <ClCompile Include="345_Reverse_Vowels_of_String.cpp" />
