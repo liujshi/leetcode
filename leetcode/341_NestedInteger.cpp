@@ -41,7 +41,7 @@ class NestedIterator {
 private:
 	int index = -1;
 	vector<int> result;
-	void process(vector<NestedInteger>& nestedList, vector<int>& result)
+	void process(const vector<NestedInteger>& nestedList, vector<int>& result)
 	{
 		for (auto e : nestedList)
 		{
@@ -69,6 +69,54 @@ public:
 		return index < result.size();
 	}
 };
+
+class NestedIterator1 {
+private:
+	stack<NestedInteger> helper;
+	NestedInteger tmp;
+
+public:
+
+	NestedIterator1(vector<NestedInteger> &nestedList) {
+		int len = nestedList.size();
+		for (int i = len - 1; i >= 0; --i)
+		{
+			helper.push(nestedList[i]);
+		}
+		while (!helper.empty() && !helper.top.isInteger())
+		{
+			tmp = helper.top();
+			helper.pop();
+			int len1 = tmp.getList().size();
+			for (int i = len1 - 1; i >= 0; --i)
+			{
+				helper.push(tmp.getList()[i]);
+			}
+		}
+	}
+
+	int next() {
+		int ret = helper.top().getInteger();
+		helper.pop();
+		return ret;
+
+	}
+
+	bool hasNext() {
+		while (!helper.empty() && !helper.top.isInteger())
+		{
+			tmp = helper.top();
+			helper.pop();
+			int len1 = tmp.getList().size();
+			for (int i = len1 - 1; i >= 0; --i)
+			{
+				helper.push(tmp.getList()[i]);
+			}
+		}
+		return !helper.empty();
+	}
+};
+
 
 /**
 * Your NestedIterator object will be instantiated and called as such:
